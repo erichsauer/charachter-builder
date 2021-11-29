@@ -3,13 +3,13 @@ import { Select } from './Select';
 export const Picker = ({currentHead, onHeadChange, currentMiddle, onMiddleChange, currentBottom, onBottomChange, currentShoes, onShoesChange}) =>
 { 
   const headOptions = [ 'bird', 'dog', 'horse' ];
-  const headValues = [1, 2, 3]
+  const headValues = ['🐧', '🐶', '🐴']
   const middleOptions = [ 'casual', 'fancy', 'comfort' ];
-  const middleValues = [1, 2, 3]
+  const middleValues = ['👚', '🦺', '🎽']
   const bottomOptions = [ 'irl', 'zoom' ];
-  const bottomValues = [1, 2, 3]
+  const bottomValues = ['👖', '🩲']
   const shoesOptions = [ 'summer', 'winter', 'zoom' ];
-  const shoesValues = [1, 2, 3]
+  const shoesValues = ['🛼', '👢', '🩰']
 
   return (
     <div>
