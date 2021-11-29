@@ -5,6 +5,7 @@ import { Picker } from './components/Picker';
 
 function App()
 {
+  const [alertSeen, setAlertSeen] = useState(false)
   const [ head, setHead ] = useState('')
   const [ middle, setMiddle ] = useState('')
   const [ bottom, setBottom ] = useState('')
@@ -15,6 +16,11 @@ function App()
   const handleCatchphrases = e =>
   {
     e.preventDefault()
+    if (!alertSeen)
+    {
+      alert('click on a catchphrase to delete')
+      setAlertSeen(true)
+    }
     setCatchphrases(currentCatchphrases => [ catchphrase, ...currentCatchphrases ])
     setCatchphrase('')
   }
